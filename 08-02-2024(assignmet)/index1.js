@@ -4,7 +4,7 @@ function Book(id, title, author) {
     this.id = id;
     this.title = title;
     this.author = author;
-    this.isBorrowed = false; // Initialize to false by default
+    this.isBorrowed = false; 
 }
 
 function addBook(id, title, author) {
@@ -51,14 +51,14 @@ function searchBook(title) {
     }
 }
 
-// Adding books
+
 addBook(1001, "Making India Awesome", "Chetan Bhagat");
 addBook(1002, "One Indian Girl", "Chetan Bhagat");
 addBook(1003, "A River Sutra", "Gita Mehta");
 
-// Example usage
-borrowBook(1001); // Borrowing a book
-listAvailableBooks(); // Listing available books
-returnBook(1001); // Returning a book
-listAvailableBooks(); // Listing available books
+
+borrowBook(1001); 
+listAvailableBooks();
+returnBook(1001); 
+listAvailableBooks(); 
 searchBook("One Indian Girl");
