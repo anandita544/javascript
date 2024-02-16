@@ -65,7 +65,7 @@ async function getData2(url2) {
         const data = await resp.json();
         console.log(data);
         let h1 = document.createElement('h1');
-        h1.textContent = "users"
+        h1.textContent = "Users"
         document.body.appendChild(h1);
 
         let output = data.slice(0, 4);
@@ -74,7 +74,7 @@ async function getData2(url2) {
 
             let div = document.createElement('div');
             // div.textContent = JSON.stringify(output);
-            div.innerHTML = `<ul><li>${JSON.stringify(output)}</li><ul>`
+            div.innerHTML = `<ul><li>Name: ${JSON.stringify(output)}</li><ul>`
             document.body.appendChild(div);
 
         });
@@ -101,7 +101,7 @@ async function getData3(url3) {
 
             let div = document.createElement('div');
             // div.textContent = JSON.stringify(output);
-            div.innerHTML = `<ul><li>${JSON.stringify(output)}</li><ul>`
+            div.innerHTML = `<ul><li>Title:${JSON.stringify(output)}</li><ul>`
             document.body.appendChild(div);
 
 
